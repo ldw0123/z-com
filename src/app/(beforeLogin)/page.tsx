@@ -16,7 +16,8 @@ export default function Main() {
           계정 만들기
         </Link>
         <h3>이미 트위터에 가입하셨나요?</h3>
-        <Link href="/login" className={styles.login}>
+        {/* 링크를 통해 i/flow/login 으로 처음 넘어갈 때는 인터셉팅 라우트가 경로를 가로채서 인터셉팅 라우트의 경로로 이동된다. 새로고침 하면 원래의 i/flow/login 경로로 이동한다. */}
+        <Link href="i/flow/login" className={styles.login}>
           로그인
         </Link>
       </div>
