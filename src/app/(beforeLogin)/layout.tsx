@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import styles from '@/app/page.module.css';
+import { ReactNode } from "react";
+import styles from "@/app/page.module.css";
 
 type Props = { children: ReactNode; modal: ReactNode };
 
@@ -8,6 +8,7 @@ export default function Layout({ children, modal }: Props) {
     <div className={styles.container}>
       {children}
       {modal}
+      {/* children 에는 page.tsx, modal 에는 @modal 패러렐 라우트가 들어가게 된다 */}
     </div>
   );
 }
